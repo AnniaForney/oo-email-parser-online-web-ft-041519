@@ -15,4 +15,4 @@ class EmailParser
   @emails.uniq
   end
 
-end 
+end
