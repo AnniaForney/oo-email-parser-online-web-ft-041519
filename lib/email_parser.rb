@@ -10,7 +10,8 @@ class EmailParser
   end
 
   def parse
-    self.emails.split(", ").map{|e| e.split(" ")}.flatten.uniq
+
+    emails.split(/[,?\s]/).select{|email| email != ""}.uniq
   end
 
 end
