@@ -7,9 +7,12 @@ class EmailParser
 
   def initialize(emails)
     @emails = emails
-end
+  end
 
-def parse
-end
+  def parse
+  @emails = @emails.gsub( ," ").split
 
-end
+  @emails.uniq
+  end
+
+end 
