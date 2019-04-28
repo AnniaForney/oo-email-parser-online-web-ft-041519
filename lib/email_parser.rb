@@ -9,7 +9,8 @@ class EmailParser
     @emails = emails
   end
 
-  #def parse
-  #end
+  def parse
+    self.emails.split(", ").map{|e| e.split(" ")}.flatten.uniq
+  end
 
 end
